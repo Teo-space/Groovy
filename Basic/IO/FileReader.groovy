@@ -1,12 +1,12 @@
-new File("File.txt").withWriter('utf-8') 
+new File("IO/File.txt").withWriter('utf-8') 
 { 
     writer -> writer.writeLine 'Hello World1'
 }
 
-File File1 = new File("File.txt") ;
+File File1 = new File("IO/File.txt") ;
 println File1.text ;
 
-File File2 = new File("File.txt");
+File File2 = new File("IO/File.txt");
 println "The file ${File2.absolutePath} has ${File2.length()} bytes";
 
 File1.delete();
